@@ -3,30 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prerequisiti</title>
+  <title>Lezione: Logica Ricorsiva</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    pre {
+      background-color: #f4f4f4;
+      padding: 1em;
+      overflow-x: auto;
+      border-left: 4px solid #007acc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      text-align: left;
+    }
+    th {
+      background-color: #007acc;
+      color: white;
+    }
+    iframe {
+      max-width: 100%;
+      height: 360px;
+      margin-top: 1em;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Prerequisiti</h1>
-    
-<nav class="tabs">
-  <a class="tab-button" href="index.html">Introduzione</a>
-  <a class="tab-button" href="bio.html">Mi presento</a>
-  <a class="tab-button" href="contesto.html">Contesto</a>
-  <a class="tab-button" href="obiettivi.html">Obiettivi</a>
-  <a class="tab-button" href="normativa.html">Normativa</a>
-  <a class="tab-button" href="prerequisiti.html">Logica Ricorsiva</a>
-  <a class="tab-button" href="lezione.html">Fasi Lezione</a>
-  <a class="tab-button" href="strategie.html">Strategie</a>
-  <a class="tab-button" href="materiali.html">Risorse</a>
-  <a class="tab-button" href="inclusione.html">Inclusione</a>
-  <a class="tab-button" href="valutazione.html">Valutazione</a>
-</nav>
+    <h1>Lezione: Logica Ricorsiva</h1>
+    <nav class="tabs">
+      <a class="tab-button" href="index.html">Introduzione</a>
+      <a class="tab-button" href="bio.html">Mi presento</a>
+      <a class="tab-button" href="contesto.html">Contesto</a>
+      <a class="tab-button" href="obiettivi.html">Obiettivi</a>
+      <a class="tab-button" href="normativa.html">Normativa</a>
+      <a class="tab-button" href="ricorsione.html">Logica Ricorsiva</a>
+      <a class="tab-button" href="lezione.html">Fasi Lezione</a>
+      <a class="tab-button" href="strategie.html">Strategie</a>
+      <a class="tab-button" href="materiali.html">Risorse</a>
+      <a class="tab-button" href="inclusione.html">Inclusione</a>
+      <a class="tab-button" href="valutazione.html">Valutazione</a>
+    </nav>
 
     <section>
-      <h2>Prerequisiti</h2>
-      <p>Indicare le conoscenze pregresse richieste agli studenti.</p>
+      <h2>📐 Approccio Matematico</h2>
+      <p>La ricorsione nasce dalla matematica. Un esempio classico è il <strong>fattoriale</strong>:</p>
+      <p><code>n! = n × (n - 1)! </code> con <code>1! = 1</code></p>
+      <p>Altro esempio è la <strong>successione di Fibonacci</strong>: <code>F(n) = F(n-1) + F(n-2)</code> con <code>F(0)=0</code> e <code>F(1)=1</code>.</p>
+
+      <h2>💻 Approccio Informatico</h2>
+      <p>In informatica, la ricorsione è una tecnica per risolvere problemi suddividendoli in sottoproblemi. È centrale in algoritmi, strutture dati e funzioni matematiche.</p>
+
+      <h3>Esempio 1: Fattoriale</h3>
+      <pre>
+def fattoriale(n):
+    if n <= 1:
+        return 1
+    return n * fattoriale(n - 1)
+      </pre>
+
+      <h3>Esempio 2: Fibonacci</h3>
+      <pre>
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+      </pre>
+
+      <h2>📽️ Guarda e Rifletti</h2>
+      <p>Guarda il video introduttivo realizzato da AFK Code Academy. Nei primi minuti viene spiegata molto bene la logica ricorsiva.</p>
+      <iframe src="https://www.youtube.com/embed/i9e1uzfe_eo" title="Ricorsione - AFK Code Academy" frameborder="0" allowfullscreen></iframe>
+
+      <h3>Domande guida</h3>
+      <ul>
+        <li>Che cos'è il caso base?</li>
+        <li>Qual è la differenza tra ricorsione e iterazione?</li>
+        <li>In quali situazioni è utile utilizzare la ricorsione?</li>
+        <li>Quali problemi può causare un uso scorretto della ricorsione?</li>
+      </ul>
+
+      <h3>Discussione in classe</h3>
+      <p>Dopo la visione del video e l'analisi degli esempi, invito la classe a discutere:</p>
+      <ul>
+        <li>Quando la ricorsione è più efficace dell'iterazione?</li>
+        <li>Quali esempi reali possono essere risolti meglio con un approccio ricorsivo?</li>
+        <li>Hai mai usato la ricorsione in altri ambiti? (es. alberi genealogici, problemi matematici, ecc.)</li>
+      </ul>
     </section>
   </div>
 </body>
