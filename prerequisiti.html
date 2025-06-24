@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lezione: Logica Ricorsiva</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
   <style>
     pre {
       background-color: #f4f4f4;
@@ -31,6 +31,13 @@
       height: 360px;
       margin-top: 1em;
     }
+    .formula {
+      background-color: #eef;
+      padding: 0.5em;
+      margin: 1em 0;
+      border-left: 4px solid #3366cc;
+      font-family: monospace;
+    }
   </style>
 </head>
 <body>
@@ -52,49 +59,95 @@
 
     <section>
       <h2>📐 Approccio Matematico</h2>
-      <p>La ricorsione nasce dalla matematica. Un esempio classico è il <strong>fattoriale</strong>:</p>
-      <p><code>n! = n × (n - 1)! </code> con <code>1! = 1</code></p>
-      <p>Altro esempio è la <strong>successione di Fibonacci</strong>: <code>F(n) = F(n-1) + F(n-2)</code> con <code>F(0)=0</code> e <code>F(1)=1</code>.</p>
+      <p>La <strong>ricorsione</strong> in matematica significa che qualcosa viene definito <em>a partire da sé stesso</em>, ma sempre in modo più semplice, fino a un punto dove la definizione non si richiama più. Questo punto è detto <strong>caso base</strong>.</p>
 
-      <h2>💻 Approccio Informatico</h2>
-      <p>In informatica, la ricorsione è una tecnica per risolvere problemi suddividendoli in sottoproblemi. È centrale in algoritmi, strutture dati e funzioni matematiche.</p>
+      <h3>💡 Esempio: Fattoriale</h3>
+      <div class="formula">
+        n! = { 1 se n = 0; &nbsp;&nbsp;&nbsp;&nbsp; n × (n - 1)! se n > 0
+      </div>
+      <p>Per esempio, per calcolare <strong>4!</strong> (quattro fattoriale):</p>
+      <div class="formula">
+        4! = 4 × 3! = 4 × 3 × 2! = 4 × 3 × 2 × 1! = 4 × 3 × 2 × 1 × 0! = 24
+      </div>
 
-      <h3>Esempio 1: Fattoriale</h3>
-      <pre>
-def fattoriale(n):
-    if n <= 1:
-        return 1
-    return n * fattoriale(n - 1)
-      </pre>
+      <h3>📐 Successione di Fibonacci</h3>
+      <div class="formula">
+        F(n) = { 0 se n = 0;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 se n = 1;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F(n - 1) + F(n - 2) se n > 1
+      </div>
 
-      <h3>Esempio 2: Fibonacci</h3>
-      <pre>
-def fibonacci(n):
-    if n <= 1:
-        return n
-    return fibonacci(n - 1) + fibonacci(n - 2)
-      </pre>
-
-      <h2>📽️ Guarda e Rifletti</h2>
-      <p>Guarda il video introduttivo realizzato da AFK Code Academy. Nei primi minuti viene spiegata molto bene la logica ricorsiva.</p>
-      <iframe src="https://www.youtube.com/embed/i9e1uzfe_eo" title="Ricorsione - AFK Code Academy" frameborder="0" allowfullscreen></iframe>
-
-      <h3>Domande guida</h3>
+      <h3>✅ Concetti Chiave</h3>
       <ul>
-        <li>Che cos'è il caso base?</li>
-        <li>Qual è la differenza tra ricorsione e iterazione?</li>
-        <li>In quali situazioni è utile utilizzare la ricorsione?</li>
-        <li>Quali problemi può causare un uso scorretto della ricorsione?</li>
+        <li><strong>Caso base:</strong> è il punto dove il problema è così semplice da poter essere risolto direttamente.</li>
+        <li><strong>Definizione ricorsiva:</strong> definire qualcosa usando una versione più piccola di sé stesso.</li>
+        <li><strong>Approccio graduale:</strong> ogni passo semplifica il problema avvicinandosi al caso base.</li>
       </ul>
 
-      <h3>Discussione in classe</h3>
-      <p>Dopo la visione del video e l'analisi degli esempi, invito la classe a discutere:</p>
-      <ul>
-        <li>Quando la ricorsione è più efficace dell'iterazione?</li>
-        <li>Quali esempi reali possono essere risolti meglio con un approccio ricorsivo?</li>
-        <li>Hai mai usato la ricorsione in altri ambiti? (es. alberi genealogici, problemi matematici, ecc.)</li>
-      </ul>
+      <h3>🧠 Come spiegarlo in classe</h3>
+      <blockquote>
+        “Pensate alla ricorsione come una <strong>matrioska</strong>: ogni funzione ne contiene un'altra, più piccola, finché si arriva a quella più semplice che conosciamo già (il caso base).”
+      </blockquote>
+
+      <table>
+        <tr><th>Concetto</th><th>Spiegazione</th></tr>
+        <tr><td>Caso base</td><td>Il punto dove la funzione smette di chiamarsi</td></tr>
+        <tr><td>Ricorsione</td><td>La funzione usa se stessa per risolvere versioni più semplici del problema</td></tr>
+        <tr><td>Fattoriale</td><td>Esempio classico: 4! = 4 × 3!</td></tr>
+      </table>
+    
+    <h2>🧪 Attività Laboratoriale Guidata</h2>
+    <p>Durante il laboratorio, gli studenti lavoreranno in piccoli gruppi per analizzare e modificare una funzione ricorsiva scritta in Python.</p>
+    <h3>Obiettivo:</h3>
+    <ul>
+      <li>Capire il funzionamento della ricorsione attraverso la programmazione</li>
+      <li>Identificare il caso base e la chiamata ricorsiva</li>
+      <li>Modificare la funzione per risolvere un problema analogo</li>
+    </ul>
+    <pre>
+def conta_down(n):
+    if n <= 0:
+        print("Boom!")
+    else:
+        print(n)
+        conta_down(n - 1)
+    </pre>
+    <p><strong>Compito:</strong> Modifica la funzione per contare al contrario da un numero fino a 0 e poi scrivere "Pronti via!".</p>
+
+    <h2>🧠 Quiz Interattivo</h2>
+    <form onsubmit="return checkQuiz();">
+      <p><strong>1. Qual è il caso base della funzione fattoriale?</strong></p>
+      <input type="radio" name="q1" value="a"> n! = n × n<br/>
+      <input type="radio" name="q1" value="b"> n! = 1 se n = 0<br/>
+      <input type="radio" name="q1" value="c"> n! = n - 1<br/>
+
+      <p><strong>2. Cosa succede se manca il caso base in una funzione ricorsiva?</strong></p>
+      <input type="radio" name="q2" value="a"> La funzione si ferma comunque<br/>
+      <input type="radio" name="q2" value="b"> Si ottiene il risultato sbagliato<br/>
+      <input type="radio" name="q2" value="c"> La funzione va in loop infinito<br/>
+
+      <p><strong>3. Quale funzione genera la successione di Fibonacci?</strong></p>
+      <input type="radio" name="q3" value="a"> F(n) = F(n-1) + F(n-2)<br/>
+      <input type="radio" name="q3" value="b"> F(n) = F(n+1) + F(n+2)<br/>
+      <input type="radio" name="q3" value="c"> F(n) = n * n<br/>
+
+      <br/>
+      <button type="submit">Verifica Risposte</button>
+      <p id="quizResult"></p>
+    </form>
+
+    <script>
+      function checkQuiz() {
+        let score = 0;
+        if (document.querySelector('input[name="q1"]:checked')?.value === "b") score++;
+        if (document.querySelector('input[name="q2"]:checked')?.value === "c") score++;
+        if (document.querySelector('input[name="q3"]:checked')?.value === "a") score++;
+        document.getElementById("quizResult").textContent = "Hai totalizzato " + score + " su 3 risposte corrette!";
+        return false;
+      }
+    </script>
     </section>
+    
   </div>
 </body>
 </html>
