@@ -1,49 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valutazione e Autovalutazione</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
+    }
+    section {
+      margin-top: 1em;
+    }
+    .box {
+      background-color: #f4fdf4;
+      padding: 1.5em;
+      border-left: 5px solid #43a047;
+      margin-bottom: 1.5em;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .box:hover {
+      transform: scale(1.02);
+    }
+    h2, h3 {
+      color: #2e7d32;
+    }
+    ul {
+      padding-left: 1.3em;
+    }
+    ul li {
+      margin-bottom: 0.5em;
+    }
+    .quote {
+      font-style: italic;
+      color: #555;
+      margin: 0.5em 0 1em 0;
+    }
+    .emoji {
+      font-size: 1.4em;
+      margin-right: 0.4em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 2em;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      padding: 0.6em;
+      text-align: center;
+    }
+    th {
+      background-color: #c8e6c9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Valutazione e Autovalutazione</h1>
+    <nav class="tabs">
+      <a class="tab-button" href="index.html">Introduzione</a>
+      <a class="tab-button" href="bio.html">Mi presento</a>
+      <a class="tab-button" href="contesto.html">Contesto</a>
+      <a class="tab-button" href="obiettivi.html">Obiettivi</a>
+      <a class="tab-button" href="normativa.html">Normativa</a>
+      <a class="tab-button" href="prerequisiti.html">Logica Ricorsiva</a>
+      <a class="tab-button" href="lezione.html">Fasi Lezione</a>
+      <a class="tab-button" href="strategie.html">Strategie</a>
+      <a class="tab-button" href="materiali.html">Risorse</a>
+      <a class="tab-button" href="inclusione.html">Inclusione</a>
+      <a class="tab-button" href="valutazione.html">Valutazione</a>
+    </nav>
 
-<section>
-  
-<h3>📌 Griglia Generale di Valutazione</h3>
+    <section>
+      <p class="quote">“La valutazione non è un punto di arrivo, ma una mappa per continuare a crescere.”</p>
+
+      <div class="box">
+        <h3>🧪 Autovalutazione con Kahoot</h3>
+        <p>Gli studenti potranno effettuare una <strong>verifica interattiva</strong> utilizzando la piattaforma Kahoot.</p>
+        <p><a href="https://kahoot.it/" target="_blank">🎯 Clicca qui per partecipare al quiz su Kahoot</a></p>
+      </div>
+
+      <div class="box">
+        <h3>📊 Griglia di Valutazione (scala 3–10)</h3>
+        <table>
+          <tr>
+            <th>Voto</th>
+            <th>Indicatori</th>
+          </tr>
+          <tr><td>10</td><td>Comprensione completa, autonomia, applicazione creativa e corretta</td></tr>
+          <tr><td>9</td><td>Ottima comprensione e applicazione, lievi imprecisioni</td></tr>
+          <tr><td>8</td><td>Buona comprensione, applicazione corretta, minimi errori</td></tr>
+          <tr><td>7</td><td>Comprensione discreta, applicazione guidata</td></tr>
+          <tr><td>6</td><td>Conoscenze essenziali, applicazione con supporto</td></tr>
+          <tr><td>5</td><td>Comprensione lacunosa, errori concettuali</td></tr>
+          <tr><td>4</td><td>Conoscenze frammentarie, gravi difficoltà applicative</td></tr>
+          <tr><td>3</td><td>Comprensione nulla o errata, mancata partecipazione</td></tr>
+        </table>
+      </div>
+    
+<h3>📊 Griglia di Valutazione per Studenti con DSA (PDP)</h3>
+<p>La seguente griglia è pensata per valutare gli studenti con Disturbi Specifici dell'Apprendimento secondo criteri flessibili e personalizzati, coerenti con il PDP.</p>
 <table>
-  <tr><th>Voto</th><th>Descrizione</th></tr>
-  <tr><td>10</td><td>Comprensione completa, autonomia, capacità argomentativa elevata</td></tr>
-  <tr><td>9</td><td>Ottima comprensione e buona rielaborazione autonoma</td></tr>
-  <tr><td>8</td><td>Buona comprensione, rielaborazione con lievi aiuti</td></tr>
-  <tr><td>7</td><td>Comprensione sufficiente, esposizione corretta con qualche incertezza</td></tr>
-  <tr><td>6</td><td>Conoscenze essenziali acquisite, esposizione semplice ma comprensibile</td></tr>
-  <tr><td>5</td><td>Comprensione parziale, esposizione frammentaria</td></tr>
-  <tr><td>4</td><td>Gravi lacune e difficoltà espositive</td></tr>
+  <tr>
+    <th>Voto</th>
+    <th>Descrizione adattata</th>
+  </tr>
+  <tr><td>10</td><td>Raggiunge pienamente gli obiettivi con strategie autonome e utilizzo efficace degli strumenti compensativi.</td></tr>
+  <tr><td>9</td><td>Comprende e rielabora i contenuti con lievi supporti. Utilizza in modo mirato mappe e sintesi.</td></tr>
+  <tr><td>8</td><td>Apprende i concetti principali con buono spirito di partecipazione. Necessita supporti medi.</td></tr>
+  <tr><td>7</td><td>Raggiunge gli obiettivi minimi con l’ausilio di schemi, tempi prolungati e mediazione docente.</td></tr>
+  <tr><td>6</td><td>Consegna prove essenziali, dimostrando parziale comprensione. Uso costante di strumenti compensativi.</td></tr>
+  <tr><td>5</td><td>Difficoltà nella comprensione globale, nonostante l’impiego di aiuti e supporti.</td></tr>
+  <tr><td>4</td><td>Non riesce a dimostrare i prerequisiti minimi, nonostante strategie e interventi di supporto.</td></tr>
 </table>
 
-  
-<h3>🤝 Griglia per Alunni con BES (1° tipo)</h3>
+<h3>📘 Griglia di Valutazione per Studenti con PEI Differenziato</h3>
+<p>La valutazione è condotta secondo criteri individualizzati e formativi, in linea con quanto previsto dal PEI.</p>
 <table>
-  <tr><th>Indicatore</th><th>Descrizione adattata</th></tr>
-  <tr><td>Comprensione</td><td>Valutata tenendo conto del livello di partenza e degli strumenti utilizzati</td></tr>
-  <tr><td>Esposizione</td><td>Tempi estesi e strumenti compensativi (es. mappe, lettura facilitata)</td></tr>
-  <tr><td>Autonomia</td><td>Supportata con mediazione del docente e materiali strutturati</td></tr>
+  <tr>
+    <th>Livello</th>
+    <th>Descrizione</th>
+  </tr>
+  <tr><td>Ottimo</td><td>Partecipa attivamente, mostra progressi rilevanti rispetto agli obiettivi personalizzati.</td></tr>
+  <tr><td>Buono</td><td>Affronta con impegno le attività, raggiungendo gli obiettivi a medio termine stabiliti nel PEI.</td></tr>
+  <tr><td>Discreto</td><td>Dimostra comprensione parziale e alterna momenti di partecipazione attiva a passività.</td></tr>
+  <tr><td>Sufficiente</td><td>Mostra progressi minimi, ma stabili. Ha bisogno di stimoli continui e mediazione.</td></tr>
+  <tr><td>In via di acquisizione</td><td>È ancora distante dagli obiettivi previsti, ma partecipa con il supporto dell’insegnante.</td></tr>
 </table>
 
-  
-<h3>📘 Griglia di Valutazione PDP (per DSA - Giulia e Sara)</h3>
+
+<h3>🟦 Griglia di Valutazione Alunni BES 1° Tipo (PDP)</h3>
+<p>Adattata per studenti con DSA e BES lievi, come Giulia e Sara.</p>
 <table>
-  <tr><th>Voto</th><th>Descrizione adattata</th></tr>
-  <tr><td>10</td><td>Strategie personali efficaci con uso autonomo di strumenti compensativi</td></tr>
-  <tr><td>9</td><td>Rielaborazione efficace con minimo supporto e uso attivo di mappe/schemi</td></tr>
-  <tr><td>8</td><td>Buona comprensione con mediazione e strutture di supporto</td></tr>
-  <tr><td>7</td><td>Consegne guidate, supporto costante, produzione sufficiente</td></tr>
-  <tr><td>6</td><td>Raggiungimento parziale degli obiettivi, forte dipendenza da supporti</td></tr>
-  <tr><td>5</td><td>Fatica significativa, necessità di riscrittura e supporto continuo</td></tr>
-  <tr><td>4</td><td>Nonostante gli adattamenti, non raggiunge i livelli minimi</td></tr>
+  <tr><th>Indicatore</th><th>Livello</th><th>Descrizione</th></tr>
+  <tr><td>Conoscenze dei contenuti</td><td>6 – 4,9</td><td>Approfondita e completa</td></tr>
+  <tr><td></td><td>4,8 – 3,7</td><td>Completa e abbastanza approfondita</td></tr>
+  <tr><td></td><td>3,6 – 2,5</td><td>Completa ma non approfondita</td></tr>
+  <tr><td></td><td>2,4 e sotto</td><td>Superficiale, lacunosa e inadeguata</td></tr>
+
+  <tr><td>Applicazione regole e esposizione</td><td>2 – 1,7</td><td>Autonoma, precisa e coerente</td></tr>
+  <tr><td></td><td>1,6 – 1,3</td><td>Coerente ma non sempre autonoma</td></tr>
+  <tr><td></td><td>1,2 – 0,9</td><td>Coerente ma con imprecisioni</td></tr>
+  <tr><td></td><td>0,8</td><td>Imprecisa e scorretta</td></tr>
+
+  <tr><td>Competenze linguistiche</td><td>2 – 1,7</td><td>Complete e corrette</td></tr>
+  <tr><td></td><td>1,6 – 1,3</td><td>Essenziali ma corrette</td></tr>
+  <tr><td></td><td>1,2 – 0,9</td><td>Frammentarie con errori</td></tr>
+  <tr><td></td><td>0,8</td><td>Poco comprensibili</td></tr>
 </table>
 
-  
-<h3>🧩 Griglia di Valutazione per PEI Differenziato (Luca)</h3>
+<h3>🟩 Griglia di Valutazione Alunni BES 2°/3° Tipo (PEI Differenziato)</h3>
+<p>Personalizzata per alunni con bisogni educativi complessi, come Luca.</p>
 <table>
-  <tr><th>Livello</th><th>Descrizione</th></tr>
-  <tr><td>Ottimo</td><td>Progresso significativo sugli obiettivi personalizzati, partecipazione attiva</td></tr>
-  <tr><td>Buono</td><td>Raggiunge obiettivi a medio termine con stimoli esterni e mediazione</td></tr>
-  <tr><td>Discreto</td><td>Parziale partecipazione, comprensione mediata ma presente</td></tr>
-  <tr><td>Sufficiente</td><td>Apprendimento elementare con supporto costante</td></tr>
-  <tr><td>In via di acquisizione</td><td>Livello iniziale, ma attitudine positiva al miglioramento</td></tr>
+  <tr><th>Indicatore</th><th>Livello</th><th>Descrizione</th></tr>
+  <tr><td>Conoscenze dei contenuti</td><td>6 – 4,9</td><td>Approfondita e completa</td></tr>
+  <tr><td></td><td>4,8 – 3,7</td><td>Abbastanza approfondita</td></tr>
+  <tr><td></td><td>3,6 – 3</td><td>Completa ma superficiale</td></tr>
+  <tr><td></td><td>2,9 – 1,3</td><td>Lacunosa</td></tr>
+  <tr><td></td><td>1,2 – 0,6</td><td>Gravemente inadeguata</td></tr>
+
+  <tr><td>Applicazione e esposizione</td><td>2 – 1,7</td><td>Autonoma e precisa</td></tr>
+  <tr><td></td><td>1,6 – 1,3</td><td>Coerente ma imprecisa</td></tr>
+  <tr><td></td><td>1,2 – 1</td><td>Imprecisa</td></tr>
+  <tr><td></td><td>0,9 – 0,5</td><td>Del tutto scorretta</td></tr>
+  <tr><td></td><td>0,4 – 0,2</td><td>Non pertinente</td></tr>
+
+  <tr><td>Competenza linguistica</td><td>2 – 1,7</td><td>Completa</td></tr>
+  <tr><td></td><td>1,6 – 1,3</td><td>Essenziale e comprensibile</td></tr>
+  <tr><td></td><td>1,2 – 1</td><td>Frammentaria</td></tr>
+  <tr><td></td><td>0,9 – 0,5</td><td>Poco comprensibile</td></tr>
+  <tr><td></td><td>0,4 – 0,2</td><td>Gravemente errata</td></tr>
 </table>
 
 </section>
+  </div>
+</body>
+</html>
