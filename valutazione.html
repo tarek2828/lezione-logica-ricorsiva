@@ -1,32 +1,105 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valutazione</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valutazione e Autovalutazione</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
+    }
+    section {
+      margin-top: 1em;
+    }
+    .box {
+      background-color: #f4fdf4;
+      padding: 1.5em;
+      border-left: 5px solid #43a047;
+      margin-bottom: 1.5em;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .box:hover {
+      transform: scale(1.02);
+    }
+    h2, h3 {
+      color: #2e7d32;
+    }
+    ul {
+      padding-left: 1.3em;
+    }
+    ul li {
+      margin-bottom: 0.5em;
+    }
+    .quote {
+      font-style: italic;
+      color: #555;
+      margin: 0.5em 0 1em 0;
+    }
+    .emoji {
+      font-size: 1.4em;
+      margin-right: 0.4em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 2em;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      padding: 0.6em;
+      text-align: center;
+    }
+    th {
+      background-color: #c8e6c9;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Valutazione</h1>
-    
-<nav class="tabs">
-  <a class="tab-button" href="index.html">Introduzione</a>
-  <a class="tab-button" href="bio.html">Mi presento</a>
-  <a class="tab-button" href="contesto.html">Contesto</a>
-  <a class="tab-button" href="obiettivi.html">Obiettivi</a>
-  <a class="tab-button" href="normativa.html">Normativa</a>
-  <a class="tab-button" href="prerequisiti.html">Logica Ricorsiva</a>
-  <a class="tab-button" href="lezione.html">Fasi Lezione</a>
-  <a class="tab-button" href="strategie.html">Strategie</a>
-  <a class="tab-button" href="materiali.html">Risorse</a>
-  <a class="tab-button" href="inclusione.html">Inclusione</a>
-  <a class="tab-button" href="valutazione.html">Valutazione</a>
-</nav>
+    <h1>📊 Valutazione e Autovalutazione</h1>
+    <nav class="tabs">
+      <a class="tab-button" href="index.html">Introduzione</a>
+      <a class="tab-button" href="bio.html">Mi presento</a>
+      <a class="tab-button" href="contesto.html">Contesto</a>
+      <a class="tab-button" href="obiettivi.html">Obiettivi</a>
+      <a class="tab-button" href="normativa.html">Normativa</a>
+      <a class="tab-button" href="prerequisiti.html">Logica Ricorsiva</a>
+      <a class="tab-button" href="lezione.html">Fasi Lezione</a>
+      <a class="tab-button" href="strategie.html">Strategie</a>
+      <a class="tab-button" href="materiali.html">Risorse</a>
+      <a class="tab-button" href="inclusione.html">Inclusione</a>
+      <a class="tab-button" href="valutazione.html">Valutazione</a>
+    </nav>
 
     <section>
-      <h2>Valutazione</h2>
-      <p>Descrivere la valutazione diagnostica, formativa, sommativa.</p>
+      <p class="quote">“La valutazione non è un punto di arrivo, ma una mappa per continuare a crescere.”</p>
+
+      <div class="box">
+        <h3>🧪 Autovalutazione con Kahoot</h3>
+        <p>Gli studenti potranno effettuare una <strong>verifica interattiva</strong> utilizzando la piattaforma Kahoot.</p>
+        <p><a href="https://kahoot.it/" target="_blank">🎯 Clicca qui per partecipare al quiz su Kahoot</a></p>
+      </div>
+
+      <div class="box">
+        <h3>📊 Griglia di Valutazione (scala 3–10)</h3>
+        <table>
+          <tr>
+            <th>Voto</th>
+            <th>Indicatori</th>
+          </tr>
+          <tr><td>10</td><td>Comprensione completa, autonomia, applicazione creativa e corretta</td></tr>
+          <tr><td>9</td><td>Ottima comprensione e applicazione, lievi imprecisioni</td></tr>
+          <tr><td>8</td><td>Buona comprensione, applicazione corretta, minimi errori</td></tr>
+          <tr><td>7</td><td>Comprensione discreta, applicazione guidata</td></tr>
+          <tr><td>6</td><td>Conoscenze essenziali, applicazione con supporto</td></tr>
+          <tr><td>5</td><td>Comprensione lacunosa, errori concettuali</td></tr>
+          <tr><td>4</td><td>Conoscenze frammentarie, gravi difficoltà applicative</td></tr>
+          <tr><td>3</td><td>Comprensione nulla o errata, mancata partecipazione</td></tr>
+        </table>
+      </div>
     </section>
   </div>
 </body>
